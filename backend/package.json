@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@langchain/community": "^0.3.57",
+    "express": "^5.1.0",
+    "langchain": "^0.3.35",
+    "nodemon": "^3.1.10",
+    "pdf-parse": "^1.1.1"
+  }
+}
