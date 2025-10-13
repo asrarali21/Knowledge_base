@@ -18,7 +18,6 @@ export async function  answerFromKb (question , k=5  ){
    })
    
 
-
    const store = await  QdrantVectorStore.fromExistingCollection(
     embedding , {
         url:"http://localhost:6333",
@@ -29,10 +28,8 @@ export async function  answerFromKb (question , k=5  ){
    const results = await store.similaritySearch(question , k)
 
    console.log("retrived chunks" , results);
+
    
-
-    
-
     const chat = new ChatGoogleGenerativeAI({
         model:"gemini-2.5-flash",
         apiKey:process.env.GEMINI_API_KEY
